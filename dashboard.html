@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Notice Board</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e3f2fd, #f1f8e9); /* Soft blue-green blend */
+      font-size: 18px;
+      color: #1a1a1a;
+    }
+
+    .sidebar {
+      width: 240px;
+      height: 100vh;
+      background: #004d40; /* Deep teal */
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 30px 20px;
+    }
+
+    .sidebar h2 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #e0f2f1;
+      margin: 14px 0;
+      text-decoration: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 17px;
+      transition: background 0.3s ease;
+    }
+
+    .sidebar a:hover {
+      background-color: #00695c;
+      color: #ffffff;
+    }
+
+    .main {
+      margin-left: 260px;
+      padding: 40px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 34px;
+      color: #004d40;
+    }
+
+    .header strong {
+      font-size: 18px;
+      color: #00796b;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-top: 20px;
+    }
+
+    .card h3 {
+      color: #00796b;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .notice {
+      padding: 14px 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .notice:last-child {
+      border-bottom: none;
+    }
+
+    .notice-title {
+      font-weight: 600;
+      font-size: 19px;
+      color: #333;
+    }
+
+    .notice-date {
+      font-size: 15px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>📝 Notice Board</h2>
+    <a href="admin_dashboard.php">🏠 Dashboard</a>
+    <a href="create_user.php">👤 Create User</a>
+    <a href="manage_users.php">🧑‍💼 Manage Users</a>
+    <a href="manage_categories.php">📂 Manage Categories</a>
+    <a href="manage_notices.php">📢 Manage Notices</a>
+    <a href="my_profile.php">🙍 My Profile</a>
+    <a href="logout.php">🚪 Logout</a>
+  </div>
+
+  <div class="main">
+    <div class="header">
+      <h1>Welcome, Zakariya!</h1>
+      <div>Role: <strong>Admin</strong></div>
+    </div>
+
+    <div class="card">
+      <h3>📌 Recent Notices</h3>
+
+      <div class="notice">
+        <div class="notice-title">⚠ Maintenance Notice</div>
+        <div class="notice-date">Posted on: 2025-07-08</div>
+      </div>
+
+      <div class="notice">
+        <div class="notice-title">📅 Class Timetable Updated</div>
+        <div class="notice-date">Posted on: 2025-07-07</div>
+      </div>
+
+      <div class="notice">
+        <div class="notice-title">📢 New Event This Friday</div>
+        <div class="notice-date">Posted on: 2025-07-05</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
